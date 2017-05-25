@@ -1,0 +1,28 @@
+.float_right{
+	float: right;
+}
+.inline_block{
+	display: inline-block;
+}
+
+.error{
+	color: red;
+}
+.left_indent{
+	margin-left: 5%;
+}
+
+.container{
+	border: 2px solid darkgreen;
+	width: 60%;
+	padding: 10px;
+}
+
+#registration{
+	border-bottom: 2px solid lightgreen;
+	padding-bottom: 10px;
+}
+
+#login{
+	padding-bottom: 10px;
+}
