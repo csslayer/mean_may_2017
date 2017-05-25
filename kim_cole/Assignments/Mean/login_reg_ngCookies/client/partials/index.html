@@ -1,0 +1,32 @@
+<div class="container">
+	<div id="registration">
+		<h3>Register</h3>
+<!-- 		<ul>
+			<li ng-repeat='error in UC.registrationErrors'>{{error}}</li>
+		</ul> -->	
+		<form ng-submit="UC.create(UC.newUser)">
+			First name: <input type="text" ng-model="UC.newUser.first_name"><br>
+			Last name: <input type="text" ng-model="UC.newUser.last_name"><br>
+			Email: <input type="text" ng-model="UC.newUser.email"><br>
+			Birthday: <input type="date" ng-model="UC.newUser.birthday"><br>
+			Password: <input type="text" ng-model="UC.newUser.password"><br>
+			Password confirmation: <input type="text" ng-model="UC.newUser.password_confirmation"><br> 
+			<input type="submit" value="Register">
+		</form>
+		<div>
+			<p class="error" ng-repeat="error in UC.registration_errors">{{ error }}</p>
+		</div>		
+	</div>
+	<div id="login">
+		<h3>Log In</h3>
+<!-- 		<ul>
+			<li ng-repeat='error in UC.loginErrors'>{{error}}</li>
+		</ul> -->
+		<form ng-submit="UC.login(UC.loginUser)">
+			Email: <input type="text" ng-model="UC.loginUser.email"><br>
+	  		Password: <input type="text" ng-model="UC.loginUser.password"><br>
+	    	<input type="submit" value="Log In">
+		</form>
+		<p class="error" ng-repeat="error in UC.login_errors">{{ error }}</p>
+	</div>
+</div>	
